@@ -30,7 +30,15 @@
                         </tr>
                         <tr>
                             <td>Status</td>
-                            <td><input type="text" name="cek" id="cek" value="<?php echo $d['cek']; ?>" ></td>
+                            <td>
+            
+                                <input type="radio" name="cek" id="cek" value="Done">
+                                <label for="cek">Done</label>
+                                <input type="radio" name="cek" id="cek" value="In Progress">
+                                <label for="cek">Progress</label>
+
+                            
+                            </td>
                         </tr>
                         <tr>
                             <td><input type="submit" value="SIMPAN"></td>

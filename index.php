@@ -20,14 +20,14 @@ Sumber Belajar
     <header>
         <h1 class="header-text">To Do List App</h1>
         <br>
-        <a href="tambah.php">+ TAMBAH KEGIATAN</a>
+        <a href="tambah.php">+ Add Activity</a>
         <br><br>
         <table border="1">
             <tr>
                 <th>No</th>
-                <th>Kegiatan</th>
+                <th>Activity</th>
                 <th>Check</th>
-                <th>Opsi</th>
+                <th>Action</th>
             </tr>
             <?php
             include 'connection.php';
@@ -41,7 +41,7 @@ Sumber Belajar
                 <td><?php echo $d['cek'] ?></td>
                 <td>
                     <a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
-                    <a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                    <a href="hapus.php?id=<?php echo $d['id']; ?>">DELETE</a>
                 </td>
             </tr>
             <?php  
