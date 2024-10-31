@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text{
+    text-align: center;
+    padding: 2rem;
+}
+
+.td {
+    margin: 10px 5px 10px 5px;
+}
+
+.add-acti{
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+.add-acti:hover{
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    color: black;
+    margin: auto;
+}
+
+table td {
+    margin: 10px;
+    padding: 1rem;
+    border: 1px solid black;
+
+}
+.isi {
+    margin: auto;
+}
+.tambah{
+    text-align: center;
+}

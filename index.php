@@ -15,28 +15,38 @@ Sumber Belajar
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD App</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
     <header>
         <h1 class="header-text">To Do List App</h1>
         <br>
-        <a href="tambah.php">+ Add Activity</a>
-        <br><br>
-        <table border="1">
-            <tr>
-                <th>No</th>
-                <th>Activity</th>
-                <th>Check</th>
-                <th>Action</th>
-            </tr>
-            <?php
+        <div class="isi">
+
+            <div class="tambah">
+
+                
+                <a class="add-acti" href="tambah.php">+ Add Activity</a>
+            </div>    
+            
+            <br><br>
+            
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Activity</th>
+                    <th>Check</th>
+                    <th>Action</th>
+                </tr>
+                <?php
             include 'connection.php';
             $no = 1;
             $data = mysqli_query($koneksi,"select * from list");
             while ($d = mysqli_fetch_array($data)) {
-            ?>
+                ?>
+            
             <tr>
-                <td><?php echo $no++; ?></td>
+                <td style="margin: 10px;" ><?php echo $no++; ?></td>
                 <td><?php echo $d['kegiatan'] ?></td>
                 <td><?php echo $d['cek'] ?></td>
                 <td>
@@ -49,7 +59,8 @@ Sumber Belajar
             ?>
             
             
-
+            
+        </div>
             
 
         </table>
